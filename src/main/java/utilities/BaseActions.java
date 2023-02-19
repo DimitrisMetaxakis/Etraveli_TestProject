@@ -97,6 +97,7 @@ public class BaseActions {
 
     /**
      * Click Enter
+     * @param locator
      * */
     public void clickEnter(By locator){
         DriverFactory.getWebDriver().findElement(locator).sendKeys(Keys.ENTER);
@@ -113,6 +114,7 @@ public class BaseActions {
 
     /**
      * Returns List of Web Elements that Match locator
+     * @param locator
      */
     public List<WebElement> findElements(By locator){
        return DriverFactory.getWebDriver().findElements(locator);
@@ -121,6 +123,9 @@ public class BaseActions {
 
     /**
      * Slide Element
+     * @param locator
+     * @param xOffset
+     * @param yOffset
      */
     public void slideElement(By locator,int xOffset, int yOffset){
         WebElement slider = DriverFactory.getWebDriver().findElement(locator);
