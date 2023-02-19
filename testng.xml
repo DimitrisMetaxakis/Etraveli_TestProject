@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Etraveli Test Suite" >
+    <parameter name="hostUrl" value="https://www.flightnetwork.com/"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="timeout" value="20"/>
+
+    <test name="Verify Multiple Filtering">
+        <classes>
+            <class name="tests.Test_A1_MultipleFiltering"/>
+        </classes>
+    </test>
+    <test name="Verify Filtering with No Results">
+        <classes>
+            <class name="tests.Test_A2_FilterinNoResults"/>
+        </classes>
+    </test>
+
+</suite>
