@@ -3,7 +3,7 @@
 
 <suite name="Etraveli Test Suite" >
     <parameter name="hostUrl" value="https://www.flightnetwork.com/"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <parameter name="timeout" value="20"/>
 
     <test name="Verify Multiple Filtering">
@@ -11,6 +11,7 @@
             <class name="tests.Test_A1_MultipleFiltering"/>
         </classes>
     </test>
+
     <test name="Verify Filtering with No Results">
         <classes>
             <class name="tests.Test_A2_FilterinNoResults"/>
