@@ -115,8 +115,7 @@ public class FiltersPO extends BaseActions {
      * @return
      */
     public FiltersPO clickArrivalGoRadioButton() {
-        waitForElementIsClickable(arrivalGoRadioButton);
-        click(arrivalGoRadioButton);
+        clickJS(arrivalGoRadioButton);
         return this;
     }
 
