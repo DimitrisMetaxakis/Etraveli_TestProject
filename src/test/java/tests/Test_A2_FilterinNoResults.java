@@ -27,14 +27,14 @@ public class Test_A2_FilterinNoResults extends BaseTest {
      * */
     private void searchFlightAndApplyFilters() {
         Travel travel2 = new Travel();
-        travel2.fromCity = "Athens";
         travel2.toCity = "Berlin";
 
         homepage.searchForFlight(travel2);
         filters.clickFiltersButton()
-                .clickNonStopFlight()
+                .clickMaxOneStopButton()
                 .slideFilters(SlidersEnum.maxPrice,-400,0) // set max price 206
                 .slideFilters(SlidersEnum.travelTime,-600,0) // set max travel time 2h 30m
+                .clickArrivalGoRadioButton()
                 .clickDoneButton();
 
     }
