@@ -13,7 +13,7 @@ public class Travel {
 
 //    public String fromDate = getDatePlusToday(26, "EEE MMM d yyyy");
 //    public String toDate = getDatePlusToday(29, "EEE MMM d yyyy");
-//    public String month = getMonth(26, "MMMM yyyy");
+//    public String month = getDatePlusToday(26, "MMMM yyyy");
 
     /***
      * Gets current day and adds x days
